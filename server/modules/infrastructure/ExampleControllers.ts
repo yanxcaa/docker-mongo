@@ -7,8 +7,6 @@ export class ExampleControllers {
     test = async (req: Request, res: Response) => {
         try {
             const records = await this.exampleServices.test();
-
-            console.log("Testing live updates in the controller!")
             res.status(200).json( records )
         } catch (error : any) {
             console.log(error)
