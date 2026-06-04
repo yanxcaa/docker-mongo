@@ -17,4 +17,5 @@ app.use(cors());
 app.use("/example", exampleRoutes);
 
 
+console.log("Testing live updates!")
 app.listen(PORT, () => console.log(`Listening in PORT ${PORT}`));
