@@ -11,4 +11,4 @@ COPY package*.json ./
 RUN npm install --only=production
 COPY --from=builder /home/app/dist ./dist
 EXPOSE 3000
-CMD [ "node", "start" ]
+CMD [ "npm", "start" ]
