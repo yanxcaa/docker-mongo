@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 
 import exampleRoutes from './modules/infrastructure/example.routes.js';
+import healthRoutes from './modules/infrastructure/healthcheck.routes.js';
 
 dotenv.config();
 const PORT = process.env.PORT;
@@ -14,6 +15,7 @@ app.use(cors());
 
 // Routes
 
+app.use("/", healthRoutes);
 app.use("/example", exampleRoutes);
 
 
