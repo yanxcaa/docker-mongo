@@ -2,6 +2,8 @@ import express, { json } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
+// Imported routes
+
 import exampleRoutes from './modules/infrastructure/example.routes.js';
 import healthRoutes from './modules/infrastructure/healthcheck.routes.js';
 
