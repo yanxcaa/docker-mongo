@@ -2,6 +2,8 @@ import { Test } from "../domain/Example.types.js";
 import { Animal } from '../../db/index.js';
 import { IExampleRepositry } from "../domain/IExampleRepository.js";
 
+// Mongooes class
+
 export class PostgresExampleRepository implements IExampleRepositry {
     async test(): Promise<Test[]> {
         try {
