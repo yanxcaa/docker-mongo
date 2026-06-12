@@ -4,6 +4,8 @@ dns.setServers(['8.8.8.8', '1.1.1.1']);
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
+// importing mongooes and using env
+
 dotenv.config();
 const MONGO_DB_CONNECTION_STRING = process.env.MONGO_DB_CONNECTION_STRING!;
 
