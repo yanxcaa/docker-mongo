@@ -4,9 +4,9 @@ import { Request, Response } from "express";
 export class ExampleControllers {
     constructor ( private readonly exampleServices: ExampleServices ) {}
 
-    test = async (req: Request, res: Response) => {
+    find = async (req: Request, res: Response) => {
         try {
-            const records = await this.exampleServices.test();
+            const records = await this.exampleServices.find();
             res.status(200).json( records )
         } catch (error : any) {
             console.log(error)

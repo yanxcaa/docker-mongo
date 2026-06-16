@@ -3,7 +3,7 @@ import { Animal } from '../../db/index.js';
 import { IExampleRepositry } from "../domain/IExampleRepository.js";
 
 export class PostgresExampleRepository implements IExampleRepositry {
-    async test(): Promise<Test[]> {
+    async find(): Promise<Test[]> {
         try {
             const animals = await Animal.find();
 

@@ -4,8 +4,8 @@ import { IExampleRepositry } from "../domain/IExampleRepository.js";
 export class ExampleServices {
     constructor( private readonly exampleRepository : IExampleRepositry ) {}
 
-    test(): Promise<Test[]> {
-        return this.exampleRepository.test();
+    find(): Promise<Test[]> {
+        return this.exampleRepository.find();
     }
 
     crear(): Promise<void> {

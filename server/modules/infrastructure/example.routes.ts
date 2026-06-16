@@ -12,7 +12,7 @@ const router: Router = Router();
 
 router.get(
     "/",
-    controllers.test
+    controllers.find
 )
 
 router.get(

@@ -1,6 +1,6 @@
 import { Test } from "./Example.types.js";
 
 export interface IExampleRepositry {
-    test(): Promise<Test[]>;
+    find(): Promise<Test[]>;
     crear(): Promise<void>;
 }
