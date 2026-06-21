@@ -15,7 +15,7 @@ services:
 #    depends_on:
 #      - mongo-example
 #  mongo-example:
-#    image: mongo:latest
+#    image: mongo:18
 #    ports:
 #      - "27017:27017"
 #    environment:
