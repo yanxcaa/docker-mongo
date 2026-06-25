@@ -7,7 +7,7 @@ router.get(
     "/",
     (req: Request, res: Response) => {
         res.status(200).json({
-            status: "ALIVE",
+            status: "OK",
             message: "Server is OK",
             timeStamp: new Date().toISOString().split("T")[0]
         })
