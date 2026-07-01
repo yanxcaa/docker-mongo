@@ -1,9 +1,6 @@
 import { Router } from "express";
 import { Response, Request } from "express";
 
-
-// Healthcheck
-
 const router: Router = Router();
 
 router.get(
